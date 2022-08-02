@@ -3,32 +3,49 @@ package com.chekincompose.ok
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.size
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
-import com.chekincompose.ok.ui.theme.ChekInComposeTheme
+import androidx.compose.ui.unit.dp
+import com.chekincompose.ok.models.Message
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Message(name = "Compose")
+            MessageCard(Message("Hello ", "Compose"))
         }
     }
 }
 
 @Composable
-fun Message(name: String) {
-    Text(text = "Hello $name")
+fun MessageCard(message: Message) {
+    Row {
+        Image(
+            painter = painterResource(id = R.drawable.img_profile),
+            contentDescription = "Contact profile image",
+            modifier = Modifier
+                .size(40.dp)
+                .clip(CircleShape)
+        )
+
+        Spacer(modifier = Modifier.width(8.dp))
+
+        Column {
+            Text(message.author)
+            Text(message.body)
+        }
+    }
 }
 
 @Preview
 @Composable
 fun PreviewMessage() {
-    Message(name = "John Cena")
+    MessageCard(Message("Hello ", "Compose"))
 }
