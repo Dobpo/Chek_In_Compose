@@ -23,5 +23,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".features.lesson_1.Lesson1Activity"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".features.lesson_2.Lesson2Activity"
+            android:screenOrientation="fullSensor" />
     </application>
 </manifest>
