@@ -14,7 +14,7 @@
         android:theme="@style/Theme.ChekInCompose"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".features.lesson_3.Lesson3Activity"
             android:exported="true"
             android:theme="@style/Theme.ChekInCompose">
             <intent-filter>
@@ -29,6 +29,9 @@
             android:screenOrientation="fullSensor" />
         <activity
             android:name=".features.lesson_2.Lesson2Activity"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".MainActivity"
             android:screenOrientation="fullSensor" />
     </application>
 </manifest>

@@ -1,4 +1,4 @@
-package com.chekincompose.ok
+package com.chekincompose.ok.features.lesson_3
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -8,11 +8,9 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
-import com.chekincompose.ok.features.lesson_3.MainScreen
-import com.chekincompose.ok.features.lesson_3.OnboardingScreen
 import com.chekincompose.ok.ui.theme.ChekInComposeTheme
 
-class MainActivity : ComponentActivity() {
+class Lesson3Activity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
