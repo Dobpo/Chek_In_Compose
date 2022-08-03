@@ -69,4 +69,17 @@ object SampleData {
             "Have you tried writing build.gradle with KTS?"
         ),
     )
+
+    val namesSample = listOf(
+        "Danish Hunt",
+        "Grayson Stevens",
+        "Amman Wise",
+        "Danniella Snow",
+        "Lilly-May Woolley",
+        "Balraj Hughes",
+        "Tyreece Thompson",
+        "Addison Yates",
+        "Taylor Pike",
+        "Yasmeen Kay"
+    )
 }
