@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Chek In Compose</string>
+    <string name="onboarding_welcom">Welcome to lesson 3 sample</string>
+    <string name="onboarding_go_next">Go next</string>
 </resources>
